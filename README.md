@@ -4,7 +4,7 @@ This is an attempt to document how to install Suricata, Barnyard2 and Snorby on 
 
 # 01. Install Suricata and dependencies
 ```
-sudo apt-get install software-properties-common<br>
+sudo apt-get install software-properties-common
 sudo add-apt-repository ppa:oisf/suricata-stable
 sudo apt-get update
 sudo apt-get install suricata
@@ -12,8 +12,9 @@ sudo apt-get install suricata
 
 # 02. Update monitoring interface
 
-```sudo nano /etc/network/interfaces```
-
+```
+sudo nano /etc/network/interfaces
+```
 Add monitoring network interface;<br>
 ```
 # The secondary (monitoring) network interface
