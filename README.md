@@ -26,7 +26,7 @@ down ip link set $IFACE promisc off
 down ifconfig $IFACE down
 post-up ethtool -G $IFACE rx 4096; for i in rx tx sg tso ufo gso gro lro; do ethtool -K $IFACE $i off; done
 ```
-# 03. Create system user (suricata)
+# 03. Create system user for Suricata
 ```
 sudo adduser --disabled-login --shell /bin/false --system --home  /nonexistent --ingroup root suricata
 sudo chown -R suricata:root /var/log/suricata
@@ -43,14 +43,15 @@ IFACE=enp0s8
 pcap:
   - interface: enp0s8
 ```  
-# 06. (Re-)start Suricata service
+# 06. (Re-)start the Suricata service
 ```
 sudo service suricata stop
 sudo rm -f  /var/run/suricata.pid
 sudo service suricata start
 sudo service suricata status
 ```
-# 07. Install suricata-update if not included in the Suricata package
+# 07. Install suricata-update
+suricata-update will be included in upcoming versions of Suricata but is not included in version 4.0.4
 ```
 sudo apt-get install python-pip
 sudo pip install --pre --upgrade pip
