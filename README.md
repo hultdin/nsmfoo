@@ -26,7 +26,7 @@ down ip link set $IFACE promisc off
 down ifconfig $IFACE down
 post-up ethtool -G $IFACE rx 4096; for i in rx tx sg tso ufo gso gro lro; do ethtool -K $IFACE $i off; done
 ```
-Make sure to set the interface in promiscuous mode and to use the virt-io network driver if you intend to run it in VirtualBox 
+Make sure to set the interface in promiscuous mode and to use Paravirtualized Network (virtio-net) as adapter if you intend to run it in VirtualBox... 
 # 03. Create system user for Suricata
 ```
 sudo adduser --disabled-login --shell /bin/false --system --home  /nonexistent --ingroup root suricata
