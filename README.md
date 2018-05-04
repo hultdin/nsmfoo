@@ -63,7 +63,7 @@ sudo touch /etc/suricata/disable.conf
 sudo touch /etc/suricata/drop.conf
 sudo touch /etc/suricata/modify.conf
 ```
-See https://suricata-update.readthedocs.io/en/latest/update.html#example-configuration-files for further details about the suricata-update configuration files<br>
+See https://suricata-update.readthedocs.io/en/latest/update.html#example-configuration-files for further details about the suricata-update configuration files.<br>
 
 The ET ruleset is updated by running:<br>
 ```
@@ -90,7 +90,9 @@ The Snort ruleset is updated by running:<br>
 ```
 sudo pulledpork.pl -c /etc/pulledpork/pulledpork.conf -l
 ```
-# 09. Install DAQ (current version is 2.0.6)
+# 09. Install DAQ
+
+Current version of DAQ is 2.0.6
 ```
 sudo apt-get install bison flex libpcap-dev
 wget https://www.snort.org/downloads/snort/daq-2.0.6.tar.gz
@@ -131,7 +133,8 @@ output database: log, mysql, host=localhost dbname=barnyard2 user=suricata passw
 ```
 sudo apt-get install mysql-server mysql-client libmysqlclient-dev
 ```
-# 14. (OPTIONAL) Create database and schema unless you intend to use Snorby
+# 14. (OPTIONAL) Create database and schema
+Database and schema is "automagically" created by Snorby during installation, so there is no use to manually create the database and schema if you intend to use Snorby.
 ```
 cd barnyard2/schemas
 mysql -uroot -p
@@ -147,7 +150,7 @@ sudo -u barnyard2 /usr/local/bin/barnyard2 -c /etc/barnyard2/barnyard2.conf -d /
 ```
 # 15. Create init.d script for Barnyard2
 
-Edit ```/etc/init.d/barnyard2```<br>
+Edit /etc/init.d/barnyard2<br>
 
 ```
 #!/bin/sh -e
