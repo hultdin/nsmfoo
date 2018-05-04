@@ -31,7 +31,7 @@ post-up ethtool -G $IFACE rx 4096; for i in rx tx sg tso ufo gso gro lro; do eth
 sudo adduser --disabled-login --shell /bin/false --system --home  /nonexistent --ingroup root suricata
 sudo chown -R suricata:root /var/log/suricata
 ```
-# 04. Update default configuration for suricata (/etc/defaults/suricata)
+# 04. Update /etc/defaults/suricata
 ```
 RUN_AS_USER=suricata
 LISTENMODE=pcap
@@ -43,7 +43,7 @@ IFACE=enp0s8
 pcap:
   - interface: enp0s8
 ```  
-# 06. (Re-)start suricata
+# 06. (Re-)start Suricata service
 ```
 sudo service suricata stop
 sudo rm -f  /var/run/suricata.pid
