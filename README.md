@@ -257,9 +257,9 @@ sudo bundle exec rake snorby:setup
 DROP USER 'snorby'@'localhost';
 CREATE USER 'snorby'@'localhost' IDENTIFIED BY 'password124';
 GRANT SELECT, INSERT, UPDATE, DELETE ON snorby.* TO 'snorby'@'localhost';
-
+```
 Test Snorby by running:
-
+```
 sudo bundle exec rails server -e production
 ```
 
