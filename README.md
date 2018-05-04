@@ -1,6 +1,6 @@
 # 00. Suricata + Barnyard2 + Snorby == True
 
-This is AN attempt to document how to install Suricata, Barnyard2 and Snorby on Ubuntu 16.04LTS<br>
+This is an attempt to document how to install Suricata, Barnyard2 and Snorby on Ubuntu 16.04LTS<br>
 
 # 01. Install Suricata and dependencies
 ```
