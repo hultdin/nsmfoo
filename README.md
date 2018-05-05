@@ -248,7 +248,7 @@ mysql GRANT ALL ON snorby.* TO 'snorby'@'localhost' IDENTIFIED BY 'password123';
 
 sudo cp /var/www/snorby/config/database.yml.example /var/www/snorby/config/database.yml
 ```
-Update the database user found in /var/www/snorby/config/database.yml<br>
+Update the database user found in /var/www/snorby/config/database.yml to match the newly created database user (snorby)<br>
 ```
 sudo cp /var/www/snorby/config/snorby_config.yml.example /var/www/snorby/config/snorby_config.yml
 
