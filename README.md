@@ -255,7 +255,7 @@ sudo cp /var/www/snorby/config/snorby_config.yml.example /var/www/snorby/config/
 sudo bundle exec rake snorby:setup
 
 DROP USER 'snorby'@'localhost';
-CREATE USER 'snorby'@'localhost' IDENTIFIED BY 'password124';
+CREATE USER 'snorby'@'localhost' IDENTIFIED BY 'password123';
 GRANT SELECT, INSERT, UPDATE, DELETE ON snorby.* TO 'snorby'@'localhost';
 ```
 Test Snorby by running:
