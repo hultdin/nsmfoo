@@ -220,7 +220,7 @@ sudo apt-get install oracle-java8-installer
 
 # 17. Install Snorby and dependencies
 ```
-sudo apt-get install -y imagemagick ruby2.3 ruby2.3-dev postgresql-server-dev-all libyaml-dev libxml2-dev libxslt-dev (libpq-dev)
+sudo apt-get install -y imagemagick ruby2.3 ruby2.3-dev postgresql-server-dev-all libyaml-dev libxml2-dev libxslt-dev whois (libpq-dev)
 
 echo "gem: --no-rdoc --no-ri" > ~/.gemrc
 sudo sh -c "echo gem: --no-rdoc --no-ri > /etc/gemrc"
