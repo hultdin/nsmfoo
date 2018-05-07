@@ -65,7 +65,7 @@ sudo touch /etc/suricata/disable.conf
 sudo touch /etc/suricata/drop.conf
 sudo touch /etc/suricata/modify.conf
 ```
-See https://suricata-update.readthedocs.io/en/latest/update.html#example-configuration-files for further details about the suricata-update configuration files. Please not that suricata-update by default merges all files into a single rules file suricata.rules under /var/lib/suricata/rules. This file needs to be added to the suricata.yaml to be used;<br>
+See https://suricata-update.readthedocs.io/en/latest/update.html#example-configuration-files for further details about the suricata-update configuration files. Please note that suricata-update by default merges all files into a single rules file suricata.rules under /var/lib/suricata/rules. This file needs to be added to the suricata.yaml to be used;<br>
 ```
 default-rule-path: /var/lib/suricata/rules
 rule-files:
