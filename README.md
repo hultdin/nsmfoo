@@ -15,7 +15,7 @@ sudo apt-get install suricata
 ```
 sudo nano /etc/network/interfaces
 ```
-Add monitoring network interface;<br>
+Add monitoring network interface;
 ```
 # The secondary (monitoring) network interface
 auto enp0s8
@@ -65,9 +65,13 @@ sudo touch /etc/suricata/disable.conf
 sudo touch /etc/suricata/drop.conf
 sudo touch /etc/suricata/modify.conf
 ```
-See https://suricata-update.readthedocs.io/en/latest/update.html#example-configuration-files for further details about the suricata-update configuration files.<br>
-
-The ET ruleset is updated by running:<br>
+See https://suricata-update.readthedocs.io/en/latest/update.html#example-configuration-files for further details about the suricata-update configuration files. Please not that suricata-update by default merges all files into a single rules file suricata.rules under /var/lib/suricata/rules. This file needs to be added to the suricata.yaml to be used;<br>
+```
+default-rule-path: /var/lib/suricata/rules
+rule-files:
+ - suricata.rules
+```
+The ET ruleset is then updated by running:<br>
 ```
 sudo suricata-update
 ```
