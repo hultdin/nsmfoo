@@ -15,7 +15,7 @@ sudo apt-get install suricata
 ```
 sudo nano /etc/network/interfaces
 ```
-Add monitoring network interface;
+Add monitoring network interface (enp0s8 in my environment);
 ```
 # The secondary (monitoring) network interface
 auto enp0s8
