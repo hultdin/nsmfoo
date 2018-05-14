@@ -77,7 +77,7 @@ sudo suricata-update --sid-msg-map /etc/suricata/sid-msg.map
 ```
 Add suricata-update to crontab to ensure that you always have fresh rules installed...<br>
 
-# 08. Install pulledpork.pl for Snort rules
+# 08. (OPTIONAL) Install pulledpork.pl for Snort rules
 ```
 sudo apt-get install -y libcrypt-ssleay-perl liblwp-useragent-determined-perl
 git clone https://github.com/shirkdog/pulledpork.git
