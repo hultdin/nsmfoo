@@ -86,6 +86,12 @@ cd pulledpork
 
 Update etc/pulledpork.conf to only include the Snort rules<br>
 
+Comment out the sid_msg.map row if you intend to use suricata-update, otherwise the sid_msg.map might be overwritten by pulledpork.pl
+
+```
+# Where should I put the sid-msg.map file?
+#sid_msg=/etc/suricata/sid-msg.map
+```
 ```
 sudo cp pulledpork.pl /usr/local/bin
 sudo chmod +x /usr/local/bin/pulledpork.pl
