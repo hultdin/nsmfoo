@@ -1,5 +1,10 @@
 #!/usr/bin/python
 
+'''
+This python script generates SQL statements that can be used to update the signature table if the alert description looks like "Snort Alert [1:1337:1]",
+i.e. there is no description matching the sid. 
+'''
+
 import sys
 import re
 
