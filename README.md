@@ -73,7 +73,7 @@ rule-files:
 ```
 The ET ruleset is then updated by running:<br>
 ```
-sudo suricata-update
+sudo suricata-update --sid-msg-map /etc/suricata/sid-msg.map
 ```
 Add suricata-update to crontab to ensure that you always have fresh rules installed...<br>
 
