@@ -29,10 +29,10 @@ post-up ethtool -G $IFACE rx 4096; for i in rx tx sg tso ufo gso gro lro; do eth
 Make sure to set the interface in promiscuous mode and to use Paravirtualized Network (virtio-net) as adapter if you intend to run it in VirtualBox... 
 # 03. Create system user for Suricata
 ```
-sudo adduser --disabled-login --shell /bin/false --system --home  /nonexistent --ingroup root suricata
+sudo adduser --disabled-login --shell /bin/false --system --home  /nonexistent --no-create-home --ingroup root suricata
 sudo chown -R suricata:root /var/log/suricata
 ```
-# 04. Update /etc/defaults/suricata
+# 04. Update /etc/default/suricata
 ```
 RUN_AS_USER=suricata
 LISTENMODE=pcap
