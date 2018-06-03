@@ -323,6 +323,14 @@ Enable the site in Apache and reload the service configuration:<br>
 sudo a2ensite <snorby-site-name>
 sudo service apache2 reload
 ```
+
+Start and stop Snorby worker by running the following command from the root catalogue for Snorby (/var/www/snorby)
+```
+rails console production
+Snorby::Worker.start
+Snorby::Worker.stop
+Snorby::Worker.running?
+```
 # 20. Create database user for Barnyard2 to be used together with Snorby
 ```
 CREATE USER 'barnyard2'@'localhost' IDENTIFIED BY 'password123';
