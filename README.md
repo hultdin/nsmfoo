@@ -324,9 +324,10 @@ sudo a2ensite <snorby-site-name>
 sudo service apache2 reload
 ```
 
-Start and stop Snorby worker by running the following command from the root catalogue for Snorby (/var/www/snorby)
+Start and stop the Snorby worker by running any of the following command from the root catalogue for Snorby (/var/www/snorby)
 ```
 rails console production
+
 Snorby::Worker.start
 Snorby::Worker.stop
 Snorby::Worker.running?
