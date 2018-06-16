@@ -75,7 +75,21 @@ The ET ruleset is then updated by running:<br>
 ```
 sudo suricata-update --sid-msg-map /etc/suricata/sid-msg.map
 ```
-Add suricata-update to crontab to ensure that you always have fresh rules installed...<br>
+Add suricata-update to crontab to ensure that you always have fresh rules installed...
+
+Optionally add URLhause malware ruleset to suricata-update, this is done by adding the following to /var/lib/suricata/update/cache/index.yaml
+```
+  # URLhaus suricata/snort malware ruleset.
+  urlhaus/malware:
+    summary: Abuse.ch Malware Ruleset
+    vendor: Abuse.ch
+    license: Non-Commercial
+    url: https://urlhaus.abuse.ch/downloads/urlhaus.tar.gz
+```
+The ruleset is then enabled by running
+```
+suricata-update enable-source urlhaus/malware
+```
 
 # 08. (OPTIONAL) Install pulledpork.pl for Snort rules
 ```
