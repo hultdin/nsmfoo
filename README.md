@@ -368,13 +368,13 @@ GRANT SELECT, INSERT ON snorby.encoding TO 'barnyard2'@'localhost';
 ```
 # 21. References
 
-https://blog.rapid7.com/2017/02/14/how-to-install-suricata-nids-on-ubuntu-linux/
-https://web.nsrc.org/workshops/2015/pacnog17-ws/raw-attachment/wiki/Track2Agenda/ex-installing-suricata.htm
-https://redmine.openinfosecfoundation.org/projects/suricata/wiki/suricatayaml
-https://redmine.openinfosecfoundation.org/projects/suricata/wiki/Suricata_Snorby_and_Barnyard2_set_up_guide
-https://suricata-update.readthedocs.io/en/latest/update.html
-https://www.aldeid.com/wiki/Snorby
-https://github.com/bensooter/Snort16OnUbuntu
-https://suricata-update.readthedocs.io/en/latest/update.html#example-configuration-files
-https://www.phusionpassenger.com/library/install/apache/install/oss/xenial
-https://github.com/Snorby/snorby/blob/master/README.md
+https://blog.rapid7.com/2017/02/14/how-to-install-suricata-nids-on-ubuntu-linux/<br>
+https://web.nsrc.org/workshops/2015/pacnog17-ws/raw-attachment/wiki/Track2Agenda/ex-installing-suricata.htm<br>
+https://redmine.openinfosecfoundation.org/projects/suricata/wiki/suricatayaml<br>
+https://redmine.openinfosecfoundation.org/projects/suricata/wiki/Suricata_Snorby_and_Barnyard2_set_up_guide<br>
+https://suricata-update.readthedocs.io/en/latest/update.html<br>
+https://www.aldeid.com/wiki/Snorby<br>
+https://github.com/bensooter/Snort16OnUbuntu<br>
+https://suricata-update.readthedocs.io/en/latest/update.html#example-configuration-files<br>
+https://www.phusionpassenger.com/library/install/apache/install/oss/xenial<br>
+https://github.com/Snorby/snorby/blob/master/README.md<br>
