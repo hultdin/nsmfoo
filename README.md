@@ -71,6 +71,10 @@ default-rule-path: /var/lib/suricata/rules
 rule-files:
  - suricata.rules
 ```
+Update the update.yaml to also restart barnyard2 after updating the ruleset
+```
+reload-command: service suricata restart; service barnyard2 restart
+```
 The ET ruleset is then updated by running:<br>
 ```
 sudo suricata-update --sid-msg-map /etc/suricata/sid-msg.map
