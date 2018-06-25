@@ -71,7 +71,7 @@ default-rule-path: /var/lib/suricata/rules
 rule-files:
  - suricata.rules
 ```
-Update the update.yaml to also restart barnyard2 after updating the ruleset
+Update the update.yaml to also restart barnyard2 when reloading the ruleset
 ```
 reload-command: service suricata restart; service barnyard2 restart
 ```
