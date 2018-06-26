@@ -96,6 +96,7 @@ suricata-update enable-source urlhaus/malware
 ```
 
 # 08. (OPTIONAL) Install pulledpork.pl for Snort rules
+Please note that the Snort syntax have started to diverge from what is supported by Suricata, this will most likely get you into trouble sooner or later and is no longer recommended...
 ```
 sudo apt-get install -y libcrypt-ssleay-perl liblwp-useragent-determined-perl
 git clone https://github.com/shirkdog/pulledpork.git
