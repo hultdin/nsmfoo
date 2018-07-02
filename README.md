@@ -73,7 +73,7 @@ rule-files:
 ```
 Update the update.yaml to also restart barnyard2 when reloading the ruleset
 ```
-reload-command: service suricata restart; service barnyard2 restart
+reload-command: service barnyard2 stop; service suricata restart; service barnyard2 start
 ```
 The ET ruleset is then updated by running:<br>
 ```
