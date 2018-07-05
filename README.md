@@ -75,9 +75,9 @@ Update the update.yaml to also restart barnyard2 when reloading the ruleset
 ```
 reload-command: service barnyard2 stop; service suricata restart; service barnyard2 start
 ```
-The ET ruleset is then updated by running:<br>
+The ET ruleset is then updated by running (preferable via cron):<br>
 ```
-sudo suricata-update --sid-msg-map /etc/suricata/sid-msg.map
+sudo suricata-update -v --no-test --sid-msg-map /etc/suricata/sid-msg.map
 ```
 Add suricata-update to crontab to ensure that you always have fresh rules installed...
 
