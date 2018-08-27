@@ -351,6 +351,8 @@ Snorby::Worker.start
 Snorby::Worker.stop
 Snorby::Worker.running?
 ```
+...or why not just use the script 'start-snorby-worker.sh'?
+
 # 20. Create database user for Barnyard2 to be used together with Snorby
 ```
 CREATE USER 'barnyard2'@'localhost' IDENTIFIED BY 'password123';
