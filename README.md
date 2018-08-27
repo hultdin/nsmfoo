@@ -383,3 +383,4 @@ https://github.com/bensooter/Snort16OnUbuntu<br>
 https://suricata-update.readthedocs.io/en/latest/update.html#example-configuration-files<br>
 https://www.phusionpassenger.com/library/install/apache/install/oss/xenial<br>
 https://github.com/Snorby/snorby/blob/master/README.md<br>
+https://github.com/Snorby/snorby/wiki/Snorby-Worker-Troubleshooting
