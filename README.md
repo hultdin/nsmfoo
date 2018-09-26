@@ -208,12 +208,15 @@ BOOKMARKING_FILE="/var/log/suricata/suricata.waldo"
 INTERFACE="enp0s8"
 PIDFILE="/var/run/barnyard2_$INTERFACE.pid"
 PIDFILE_OWNER="barnyard2:root"
+PIDFILE_MODE="0660"
 
 case "$1" in
   start)
        echo -n "Starting barynard2 as daemon..."
        "$BARNYARD2" -c "$CONFIG" -d "$SPOOL_DIRECTORY" -f "$SPOOL_FILE" -w "$BOOKMARKING_FILE" -D > /dev/null 2>&1
+       touch "$PIDFILE"
        chown "$PIDFILE_OWNER" "$PIDFILE"
+       chmod "$PIDFILE_MODE" "$PIDFILE"
        echo " done."
        ;;
   stop)
