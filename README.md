@@ -285,6 +285,7 @@ Update the database user found in /var/www/snorby/config/database.yml to match t
 sudo cp /var/www/snorby/config/snorby_config.yml.example /var/www/snorby/config/snorby_config.yml
 
 sudo bundle exec rake snorby:setup
+(if the above fails, try runnig "RAILS_ENV=production bundle exec rake snorby:setup" as root)
 
 DROP USER 'snorby'@'localhost';
 CREATE USER 'snorby'@'localhost' IDENTIFIED BY 'password123';
