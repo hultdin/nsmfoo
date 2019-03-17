@@ -8,6 +8,7 @@ sudo apt-get install software-properties-common
 sudo add-apt-repository ppa:oisf/suricata-stable
 sudo apt-get update
 sudo apt-get install suricata
+sudo apt-get upgrade suricata
 ```
 
 # 02. Update monitoring interface
